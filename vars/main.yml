@@ -1,0 +1,8 @@
+---
+# vars file for Consul
+binary_path: /usr/local/bin/
+ui_path: /home/root/consul-ui
+config_dir: /etc/consul.d
+consul_ip: 192.168.2.18
+node_name: consul1
+binary_path_rhel: /usr/bin
