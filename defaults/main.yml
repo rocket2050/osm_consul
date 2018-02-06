@@ -1,0 +1,6 @@
+---
+# defaults file for Consul
+vars:
+  command_output_full:
+    stdout: will be overriden below
+  command_output: "{{ command_output_full.stdout }}"
