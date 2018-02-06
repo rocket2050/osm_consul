@@ -1,0 +1,11 @@
+---
+# tasks file for Consul
+- name: To install Consul
+  include: debian.yml
+  when:
+    ansible_os_family == 'Debian'
+
+- name: To install Consul on RedHat
+  include: redhat.yml
+  when:
+    ansible_os_family == 'RedHat'
