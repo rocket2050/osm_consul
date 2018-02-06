@@ -1,0 +1,11 @@
+[Unit]
+Description=Consul
+Documentation=https://www.consul.io/
+
+[Service]
+ExecStart=/usr/bin/consul agent -server -ui-dir={{ ui_path }} -data-dir=/tmp/ -node={{ node_name }} -bind={{ consul_ip }} -config-dir={{ config_dir }}
+ExecReload=/bin/kill -HUP $MAINPID
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
