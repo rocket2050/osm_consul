@@ -1,0 +1,5 @@
+---
+- hosts: consul
+  user: root
+  roles:
+    -  Consul
